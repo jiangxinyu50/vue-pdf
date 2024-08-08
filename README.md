@@ -2,16 +2,16 @@
 vue.js pdf viewer is a package for Vue that enables you to display and view PDF's easily via vue components.
 
 ## Fork Info
-Fork of [Franck Freiburger's vue-pdf](https://github.com/FranckFreiburger/vue-pdf) which appears to be abandonded.
-This release fixes a bug which throws the error: "TypeError: Cannot read properties of undefined (reading 'catch')".
+Fork of [Franck Freiburger's vue-pdf](https://github.com/FranckFreiburger/vue-pdf) which appears to be abandonded.And then Fork of [teckel12's vue-pdf](https://github.com/teckel12/vue-pdf).
+This release fixes a bug which throws the error: "TypeError: Cannot read properties of null (reading 'sendWithPromise')".
 
 ## Install via NPM/Yarn
 ```bash
-npm install @teckel/vue-pdf
+npm install @jiangxinyu50/vue-pdf
 ```
 
 ```bash
-yarn add @teckel/vue-pdf
+yarn add @jiangxinyu50/vue-pdf
 ```
 
 ## Example - basic
@@ -21,7 +21,7 @@ yarn add @teckel/vue-pdf
 </template>
 
 <script>
-import pdf from '@teckel/vue-pdf'
+import pdf from '@jiangxinyu50/vue-pdf'
 
 export default {
   components: {
@@ -29,12 +29,6 @@ export default {
   }
 }
 ```
-
-## Demo
-
-[vue-pdf demo on jsfiddle](https://jsfiddle.net/fossfiddler/5k4ptmqg/145/)
-
-_TBD: fix the demo_
 
 ## Browser support
 Same browser support as [Vue.js 2](https://github.com/vuejs/vue/blob/dev/README.md)
@@ -120,7 +114,7 @@ Triggers when an internal link is clicked
 
 <script>
 
-import pdf from '@teckel/vue-pdf'
+import pdf from '@jiangxinyu50/vue-pdf'
 
 export default {
 	components: {
@@ -154,7 +148,7 @@ export default {
 
 <script>
 
-import pdf from '@teckel/vue-pdf'
+import pdf from '@jiangxinyu50/vue-pdf'
 
 var loadingTask = pdf.createLoadingTask('https://cdn.mozilla.net/pdfjs/tracemonkey.pdf');
 
@@ -217,7 +211,7 @@ export default {
 
 <script>
 
-import pdf from '@teckel/vue-pdf'
+import pdf from '@jiangxinyu50/vue-pdf'
 
 export default {
 	components: {
@@ -262,7 +256,7 @@ export default {
 	</div>
 </template>
 <script>
-import pdf from '@teckel/vue-pdf'
+import pdf from '@jiangxinyu50/vue-pdf'
 
 export default {
 	components: {
