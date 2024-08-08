@@ -230,7 +230,9 @@ export default function(PDFJS) {
 			var linkService = new PDFLinkService();
 			linkService.setDocument(pdfDoc);
 			linkService.setViewer(viewer);
-
+			
+			if (!pdfDoc) return;
+			
 			pendingOperation = pendingOperation.then(function() {
 
 				var getAnnotationsOperation =
